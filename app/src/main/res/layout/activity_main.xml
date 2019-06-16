@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/OrderTracker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60sp"
+        android:gravity="center_horizontal"
+        android:text="Score Tracker"
+        android:textSize="35sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50sp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="16sp"
+                    android:id="@+id/teamScoreA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Team A"
+                    android:textSize="35sp" />
+                <TextView
+                    android:layout_marginTop="16sp"
+                    android:id="@+id/teamScoreADisp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="0"
+                    android:textSize="35sp" />
+
+                <Button
+                    android:layout_marginTop="16sp"
+
+                    android:id="@+id/teamScoreA3Points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 Points"
+                    android:onClick="teamScoreA3Points"/>
+
+
+                <Button
+                    android:layout_marginTop="16sp"
+                    android:onClick="teamScoreA2Points"
+                    android:id="@+id/teamScoreA2Points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 Points" />
+
+                <Button
+                    android:layout_marginTop="16sp"
+
+                    android:id="@+id/teamScoreA1Points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 Points"
+                    android:onClick="teamScoreA1Points"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50sp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="16sp"
+                    android:id="@+id/teamScoreB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Team B"
+                    android:textSize="35sp" />
+                <TextView
+                    android:layout_marginTop="16sp"
+                    android:id="@+id/teamScoreBDisp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="0"
+                    android:textSize="35sp" />
+
+                <Button
+                    android:layout_marginTop="16sp"
+
+                    android:id="@+id/teamScoreB3Points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 Points"
+                    android:onClick="teamScoreB3Points"/>
+
+
+                <Button
+                    android:layout_marginTop="16sp"
+                    android:onClick="teamScoreB2Points"
+                    android:id="@+id/teamScoreB2Points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 Points" />
+
+                <Button
+                    android:layout_marginTop="16sp"
+
+                    android:id="@+id/teamScoreB1Points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 Points"
+                    android:onClick="teamScoreB1Points"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/resetScoresID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:text="Total"
+            android:onClick="resetScores"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
