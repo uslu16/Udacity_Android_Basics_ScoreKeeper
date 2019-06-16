@@ -9,6 +9,9 @@
     tools:context=".MainActivity">
 
 
+    <!--Add Sytling Later
+    https://classroom.udacity.com/courses/ud836/lessons/4036438656/concepts/43862685810923
+    -->
     <TextView
         android:id="@+id/OrderTracker"
         android:layout_width="match_parent"
